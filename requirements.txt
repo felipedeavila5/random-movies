@@ -3,9 +3,11 @@ backports.zoneinfo==0.2.1
 certifi==2021.10.8
 charset-normalizer==2.0.12
 coverage==6.3.2
+dj-database-url==0.5.0
 Django==4.0.3
 django-environ==0.8.1
 djangorestframework==3.13.1
+gunicorn==20.1.0
 idna==3.3
 model-mommy==2.0.0
 pytz==2022.1
