@@ -35,6 +35,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+#Heroku Server
+IS_HEROKU = eval(env('IS_HEROKU'))
 
 # Application definition
 
@@ -97,16 +99,18 @@ WSGI_APPLICATION = 'movies.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if not IS_HEROKU:
+    
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
     }
-}
-
-DATABASES = {
-    'default': dj_database_url.config()
-}
+else:
+    DATABASES = {
+        'default': dj_database_url.config()
+    }
 
 
 # Password validation
