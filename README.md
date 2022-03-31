@@ -5,14 +5,15 @@ Random Movies is a django application to randomly display movie information
 ## Local Installation
 Let's create a virtual environment
 ```
+sudo apt install python3-venv
 python3 -m venv venv
-cd venv
 source venv/bin/activate
 ```
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install dependencies.
 
 ```bash
+sudo apt-get install libpq-dev python-dev
 pip install -r requirements.txt
 ```
 
