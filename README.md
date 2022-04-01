@@ -30,7 +30,6 @@ The **THEMOVIEDB_API_KEY** variable can be obtained from [The Movie Database API
 Configure database migrations:
 
 ```
-python3 manage.py makemigrations
 python3 manage.py migrate
 ```
 
