@@ -48,6 +48,11 @@ After installation the database will be empty. We need to add movies to the data
 http://127.0.0.1:8000/api/seed
 ```
 
+## Tests
+
+```
+python3 manage.py test
+```
 
 
 
