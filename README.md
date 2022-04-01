@@ -1,6 +1,7 @@
 # Random Movies
 
 Random Movies is a django application to randomly display movie information
+[Live Demo](https://the-random-movies.herokuapp.com/)
 
 ![Cover](docs/images/cover.png)
 
