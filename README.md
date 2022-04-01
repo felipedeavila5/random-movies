@@ -2,6 +2,9 @@
 
 Random Movies is a django application to randomly display movie information
 
+![Cover](docs/images/cover.png)
+
+
 ## Local Installation
 Let's create a virtual environment
 ```
