@@ -52,11 +52,28 @@ class RepoTheMovieDB(ApiWeb, InterfaceMoviesWeb):
         """
         Prepare data from movie after response request
         """
-        if movie['poster_path']:
-            movie['poster_path'] = self.base_url_image+movie['poster_path']
-        else:
-            movie['poster_path'] = None
+        movie['poster_path'] = self.prepare_poster_path(movie)
+        movie['genres'] = self.prepare_genres(movie)
         return movie
+
+    def prepare_poster_path(self, movie):
+        """
+        Prepare movie poster path
+        """
+        if not 'poster_path' in movie: return None
+        poster_path = movie['poster_path']
+        if not poster_path: return None
+        return self.base_url_image+poster_path
+    
+    def prepare_genres(self, movie):
+        """
+        Prepare movie genres
+        """
+        if not 'genres' in movie: return []
+        genres = movie['genres']
+        if not genres:return []
+        genres = [genre['name'].lower() for genre in genres]
+        return genres
         
 
 class TheMovieDBTrending(RepoTheMovieDB):

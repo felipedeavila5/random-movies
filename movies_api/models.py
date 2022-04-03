@@ -10,6 +10,12 @@ class Base(models.Model):
     class Meta:
         abstract = True
 
+class GenresModel(Base):
+    name = models.CharField(max_length=100, unique=True)
+
+    def __str__(self):
+        return self.name
+
 class MoviesModel(Base):
     id_movie = models.UUIDField(primary_key=True, default=uuid4, editable=False)
     title = models.CharField(max_length=255)
@@ -18,9 +24,11 @@ class MoviesModel(Base):
     run_time = models.IntegerField()
     owner = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     poster_path = models.CharField(max_length=1000, default="", blank=True, null=True)
+    genres = models.ManyToManyField(GenresModel, related_name='genres', blank=True)
 
     def __str__(self):
         return self.title
+
 
     
 
