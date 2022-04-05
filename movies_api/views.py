@@ -21,7 +21,11 @@ class RandomMoviesViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = MoviesSerializer
     
     def get_queryset(self):
-         return [get_random_movie()]
+        query_params = self.request.query_params.dict()
+        query_params['genres'] = self.request.query_params.getlist('genres')
+        movie = get_random_movie(query_params)
+        if movie: return [movie]
+        else: return []
 
 class SeedMoviesApiView(APIView):
 

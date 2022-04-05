@@ -1,4 +1,4 @@
-from rest_framework.test import APITestCase
+from rest_framework.test import APITestCase, APIRequestFactory
 from rest_framework import status
 from movies_api.serializers import MoviesSerializer
 from movies_api.views import *
@@ -34,14 +34,19 @@ class MoviesViewSetAPITestCase(APITestCase):
         self.assertEqual(owner, self.user)
 
 class RandomMoviesViewSetAPITestCase(APITestCase):
+
+    def setUp(self):
+        self.factory = APIRequestFactory()
     
     def test_get_queryset(self):
         """
         Should query a random MovieModel
         """
+        request = self.factory.get(reverse('movies_api:random-list'))
         movie = mommy.make('MoviesModel')
-        view = RandomMoviesViewSet()
-        random = view.get_queryset()[0]
+        movie = MoviesSerializer(movie).data
+        view = RandomMoviesViewSet.as_view({'get': 'list'})(request)
+        random = dict(view.data[0])
         self.assertEqual(movie, random)
 
 class SeedMoviesApiViewAPITestCase(APITestCase):
