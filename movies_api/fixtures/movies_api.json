@@ -188,7 +188,7 @@
         "release_date": "2021-12-16",
         "overview": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man",
         "run_time": 148,
-        "owner": 1,
+        "owner": null,
         "poster_path": "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
         "genres": []
     }
@@ -204,7 +204,7 @@
         "release_date": "2022-03-01",
         "overview": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
         "run_time": 176,
-        "owner": 1,
+        "owner": null,
         "poster_path": "https://image.tmdb.org/t/p/original/74xTEgt7R36Fpooo50r9T25onhq.jpg",
         "genres": []
     }
