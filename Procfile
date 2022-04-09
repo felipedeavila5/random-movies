@@ -1,2 +1,2 @@
 web: gunicorn movies.wsgi --log-file - 
-release: python manage.py migrate
+release: chmod u+x release.sh && ./release.sh

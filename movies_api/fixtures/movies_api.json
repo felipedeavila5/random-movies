@@ -1,0 +1,212 @@
+[
+{
+    "model": "movies_api.genresmodel",
+    "pk": 1,
+    "fields": {
+        "create_at": "2022-04-01",
+        "update_at": "2022-04-01",
+        "active": true,
+        "name": "crime"
+    }
+},
+{
+    "model": "movies_api.genresmodel",
+    "pk": 2,
+    "fields": {
+        "create_at": "2022-04-01",
+        "update_at": "2022-04-01",
+        "active": true,
+        "name": "drama"
+    }
+},
+{
+    "model": "movies_api.genresmodel",
+    "pk": 3,
+    "fields": {
+        "create_at": "2022-04-01",
+        "update_at": "2022-04-01",
+        "active": true,
+        "name": "action"
+    }
+},
+{
+    "model": "movies_api.genresmodel",
+    "pk": 4,
+    "fields": {
+        "create_at": "2022-04-01",
+        "update_at": "2022-04-01",
+        "active": true,
+        "name": "history"
+    }
+},
+{
+    "model": "movies_api.genresmodel",
+    "pk": 5,
+    "fields": {
+        "create_at": "2022-04-01",
+        "update_at": "2022-04-01",
+        "active": true,
+        "name": "thriller"
+    }
+},
+{
+    "model": "movies_api.genresmodel",
+    "pk": 6,
+    "fields": {
+        "create_at": "2022-04-01",
+        "update_at": "2022-04-01",
+        "active": true,
+        "name": "romance"
+    }
+},
+{
+    "model": "movies_api.genresmodel",
+    "pk": 7,
+    "fields": {
+        "create_at": "2022-04-01",
+        "update_at": "2022-04-01",
+        "active": true,
+        "name": "comedy"
+    }
+},
+{
+    "model": "movies_api.genresmodel",
+    "pk": 8,
+    "fields": {
+        "create_at": "2022-04-01",
+        "update_at": "2022-04-01",
+        "active": true,
+        "name": "tv movie"
+    }
+},
+{
+    "model": "movies_api.genresmodel",
+    "pk": 9,
+    "fields": {
+        "create_at": "2022-04-01",
+        "update_at": "2022-04-01",
+        "active": true,
+        "name": "mystery"
+    }
+},
+{
+    "model": "movies_api.genresmodel",
+    "pk": 10,
+    "fields": {
+        "create_at": "2022-04-02",
+        "update_at": "2022-04-02",
+        "active": true,
+        "name": "adventure"
+    }
+},
+{
+    "model": "movies_api.genresmodel",
+    "pk": 11,
+    "fields": {
+        "create_at": "2022-04-02",
+        "update_at": "2022-04-02",
+        "active": true,
+        "name": "fantasy"
+    }
+},
+{
+    "model": "movies_api.genresmodel",
+    "pk": 12,
+    "fields": {
+        "create_at": "2022-04-02",
+        "update_at": "2022-04-02",
+        "active": true,
+        "name": "science fiction"
+    }
+},
+{
+    "model": "movies_api.genresmodel",
+    "pk": 13,
+    "fields": {
+        "create_at": "2022-04-05",
+        "update_at": "2022-04-05",
+        "active": true,
+        "name": "horror"
+    }
+},
+{
+    "model": "movies_api.moviesmodel",
+    "pk": "00000000-0000-0000-0000-00000000247b",
+    "fields": {
+        "create_at": "2022-03-28",
+        "update_at": "2022-03-28",
+        "active": true,
+        "title": "Click",
+        "release_date": "2006-06-23",
+        "overview": "A married workaholic, Michael Newman doesn't have time for his wife and children, not if he's to impress his ungrateful boss and earn a well-deserved promotion. So when he meets Morty, a loopy sales clerk, he gets the answer to his prayers: a magical remote that allows him to bypass life's little distractions with increasingly hysterical results.",
+        "run_time": 107,
+        "owner": null,
+        "poster_path": "https://image.tmdb.org/t/p/original//oL0k5JA53PyoHSZqKb3cNkhwBCE.jpg",
+        "genres": []
+    }
+},
+{
+    "model": "movies_api.moviesmodel",
+    "pk": "00000000-0000-0000-0000-000000067337",
+    "fields": {
+        "create_at": "2022-03-28",
+        "update_at": "2022-03-28",
+        "active": true,
+        "title": "Mini Max",
+        "release_date": "2021-01-03",
+        "overview": "Ambitious scientist Maksim Minaev is on the verge of discovery, thanks to which he can receive the Nobel Prize. In pursuit of fame, Maxim conducts a risky experiment on himself and shrinks to the size of an ordinary test tube. The young scientist desperately needs help, but his girlfriend abandoned him, his best friend betrayed him, and he has no one else to count on... Suddenly, the hero volunteers to help a 12-year-old boy chained to a wheelchair.",
+        "run_time": 81,
+        "owner": null,
+        "poster_path": "https://image.tmdb.org/t/p/original//7EBokT3R6xQ87I6VoWJwBxs7VDP.jpg",
+        "genres": []
+    }
+},
+{
+    "model": "movies_api.moviesmodel",
+    "pk": "00000000-0000-0000-0000-0000000bd255",
+    "fields": {
+        "create_at": "2022-03-25",
+        "update_at": "2022-03-25",
+        "active": true,
+        "title": "Diary of a Wimpy Kid",
+        "release_date": "2021-12-03",
+        "overview": "Greg Heffley is a scrawny but ambitious kid with an active imagination and big plans to be rich and famous – he just has to survive middle school first.",
+        "run_time": 58,
+        "owner": null,
+        "poster_path": "https://image.tmdb.org/t/p/original//obg6lWuNaZkoSlwrVG4VVk4SmT.jpg",
+        "genres": []
+    }
+},
+{
+    "model": "movies_api.moviesmodel",
+    "pk": "08dc5d5f-590e-4639-984c-069594bc91d1",
+    "fields": {
+        "create_at": "2022-03-20",
+        "update_at": "2022-03-22",
+        "active": true,
+        "title": "Spider-Man: No Way Home",
+        "release_date": "2021-12-16",
+        "overview": "With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man",
+        "run_time": 148,
+        "owner": null,
+        "poster_path": "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+        "genres": []
+    }
+},
+{
+    "model": "movies_api.moviesmodel",
+    "pk": "2ff6e525-3f8d-47a5-af6e-28409a01abb1",
+    "fields": {
+        "create_at": "2022-03-22",
+        "update_at": "2022-03-22",
+        "active": true,
+        "title": "The Batman",
+        "release_date": "2022-03-01",
+        "overview": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
+        "run_time": 176,
+        "owner": null,
+        "poster_path": "https://image.tmdb.org/t/p/original/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+        "genres": []
+    }
+}
+]
