@@ -1,2 +1,2 @@
 web: gunicorn movies.wsgi --log-file - 
-release: ./release.sh
+release: chmod u+x release.sh && ./release.sh
