@@ -12,8 +12,8 @@ env:
   THEMOVIEDB_BASE_URL: https://api.themoviedb.org/
   THEMOVIEDB_BASE_URL_IMAGE: https://image.tmdb.org/t/p/original/
   THEMOVIEDB_API_VERSION: 3
-  THEMOVIEDB_INCLUDE_ADULT: False
-  IS_HEROKU: False
+  THEMOVIEDB_INCLUDE_ADULT: "False"
+  IS_HEROKU: "False"
 
 jobs:
   build:
